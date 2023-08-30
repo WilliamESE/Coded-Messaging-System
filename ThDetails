@@ -1,0 +1,38 @@
+0xDEADBEEF = 3 735 928 559
+if (read == 0xDEADBEEF)
+	Receiver
+	Header type
+	if(1) //Header
+		Version
+		Data Length
+		Header end
+		Message
+		Sender
+		Priority
+		load into queue
+	else //No header
+		Type 
+		if(1) //Message
+			Length
+			Message
+			Sender
+			Priority
+			load into queue
+		else //Recording
+			Length
+			Compressed //0=No compresstion, 1=RLE, else
+			Collect data
+			if (Compressed)
+				uncompress it
+			
+else
+	continue looking for signature
+	
+	
+	25 XOR 3600 = 3625
+	
+	54 -> 13824
+	
+	AD + (DE * 100) = DEAD
+
+
