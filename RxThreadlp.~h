@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+#ifndef RxThreadlpH
+#define RxThreadlpH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+//---------------------------------------------------------------------------
+class RxThread : public TThread
+{
+private:
+protected:
+    void __fastcall Execute();
+public:
+    __fastcall RxThread(bool CreateSuspended);
+    void __fastcall AddItReciver();
+	void __fastcall ViewPrg2();
+	void __fastcall DeComHuffman(unsigned char *In,int size,unsigned char out[])
+    };
+//---------------------------------------------------------------------------
+
+#endif
